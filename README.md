@@ -40,6 +40,10 @@ Run it by command below.
 node index.js
 ```
 
+## 參考網站 (Reference)  
+* [The-SourceCode / DiscordJS_Template](https://github.com/The-SourceCode/DiscordJS_Template)  
+
+
 ## 貢獻一己之力 (Contribution)
 
 poke-dc 目前雖然只是個小專案，但本人還是希望這個專案能夠持續進步！若有發現臭蟲(bug)或問題，請幫忙在Issue留言告知詳細情形。  
