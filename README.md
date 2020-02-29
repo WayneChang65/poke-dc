@@ -2,7 +2,8 @@
 
 poke-dc 是一個服務"寶可夢 大集團 交流 大群"伺服器的Discord機器人，她的名字是**艾薇小妹**。  
 poke-dc is discord bot for POKEMON-GROUP server.  
-
+ 
+![image](https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_pic2.png)
 
 ## 前言(Overview)
 
