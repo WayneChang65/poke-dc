@@ -1,0 +1,28 @@
+{
+  "prefix_old": "p!",
+  "prefix": "",
+  "guild_pokemon_group": "635373123448864769",
+
+  "(For 測試)接受列管的交易區頻道名稱": "",
+  "post_mgr_channel_1_test": "測試刪除區1",
+  "post_mgr_channel_2_test": "測試刪除區2",
+
+  "接受列管的交易區頻道名稱": "",
+  "post_mgr_channel_1": "寶可夢-物品-交易區",
+  "post_mgr_channel_2": "交易區2-尚未使用",
+
+  "提醒換日 頻道名稱": "",
+  "taggle_msg_channel_drivers": "極巨團體戰-約戰區",
+  
+  "入群通知 頻道編號": "",
+  "id_channel_ann": "635373123448864771",
+
+  "身份組選擇區 頻道編號": "",
+  "id_channel_roles_chose": "666445276482895872",
+
+  "公告區 頻道編號": "",
+  "id_channel_announce": "661637782317432843",
+
+  "無限列車長 身份組編號": "",
+  "id_role_drivers": "680799930201538600"
+}

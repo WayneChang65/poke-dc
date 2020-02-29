@@ -1,0 +1,23 @@
+{
+  "name": "poke_dc",
+  "version": "1.0.0",
+  "description": "poke_dc is a discord bot for POKEMON-GROUP server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wayne Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WayneChang65/poke-dc/issues"
+  },
+  "homepage": "https://github.com/WayneChang65/poke-dc#readme",
+  "dependencies": {
+    "@waynechang65/fml-consolelog": "^1.1.0",
+    "@waynechang65/pokeiv": "^1.1.4",
+    "discord.js": "^11.3.2",
+    "fs": "0.0.1-security",
+    "ms": "^2.1.1",
+    "node-datetime": "^2.1.2"
+  }
+}
