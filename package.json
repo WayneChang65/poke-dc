@@ -1,6 +1,6 @@
 {
   "name": "poke_dc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "poke_dc is a discord bot for POKEMON-GROUP server",
   "main": "index.js",
   "scripts": {
