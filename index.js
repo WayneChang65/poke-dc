@@ -10,8 +10,8 @@ const taggle_msg = require('./lib/taggle_msg.js');
 
 bot.commands = new Discord.Collection();
 
-const MGR_CHANNEL_1 = config.post_mgr_channel_1;
-const MGR_CHANNEL_2 = config.post_mgr_channel_2;
+const MGR_CHANNEL_1 = config.post_mgr_channel_1;	// 交易區
+const MGR_CHANNEL_2 = config.post_mgr_channel_2;	// Home交易區
 const ID_CHANNEL_ANN = config.id_channel_ann;
 const GUILD_POKEMON_GROUP = config.guild_pokemon_group;
 
@@ -64,9 +64,13 @@ bot.on("ready", () => {
 		'23:50', c.TODAY, '車長換日提醒', '車長換日提醒 Timer ON!');
 
 	const timeSpan = 1000 * 60 * 10; // 10分鐘
-	taggle_msg.warningTradeMsg(undefined, bot, timeSpan);
+	taggle_msg.warningTradeMsg(undefined, bot, timeSpan, MGR_CHANNEL_1);
 	scheduling.setCyclicTimer_Do_EveryInterval(null, bot, taggle_msg.warningTradeMsg, 
-		timeSpan, '買賣區規則提醒', '買賣區規則提醒 Timer ON!');
+		timeSpan, MGR_CHANNEL_1, '買賣區規則提醒', '買賣區規則提醒 Timer ON!');
+	
+	taggle_msg.warningTradeMsg(undefined, bot, timeSpan, MGR_CHANNEL_2);
+	scheduling.setCyclicTimer_Do_EveryInterval(null, bot, taggle_msg.warningTradeMsg, 
+		timeSpan, MGR_CHANNEL_2, 'home買賣區規則提醒', 'home買賣區規則提醒 Timer ON!');
 });
 
 bot.on('guildMemberAdd', member => {

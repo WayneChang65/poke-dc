@@ -33,6 +33,9 @@ Install dependencies in the cloned poke-dc folder
 npm install
 ```
 
+* 將Discord bot的token加入名為**POKE_DC_TOKEN**的環境變數。  
+Add token of the Discord bot to **POKE_DC_TOKEN** env variable. 
+
 * 透過以下指令執行。  
 Run it by command below.   
 
