@@ -50,11 +50,12 @@ module.exports.run = async (bot, message, args) => {
         return;
     }        
     let ytID = aryMsg[1].trim();
-
+    
     fmlog('command_msg',
         [String(message.author.username), ytID, message.content, '', '', '']);
 
     console.log('.... [yt2mp3] Processing ....');
+    gUsrMsg.reply('好的。轉檔需要時間，請耐心稍等。');
     gUuid = basic_f.uuid();
     yd.download(ytID, gUuid + '.mp3');
 }
