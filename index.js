@@ -71,7 +71,7 @@ bot.on("ready", () => {
 	
 	taggle_msg.warningTradeMsg(undefined, bot, timeSpan, MGR_CHANNEL_2);
 	scheduling.setCyclicTimer_Do_EveryInterval(null, bot, taggle_msg.warningTradeMsg, 
-		timeSpan, MGR_CHANNEL_2, 'home買賣區規則提醒', 'home買賣區規則提醒 Timer ON!');
+		timeSpan, MGR_CHANNEL_2, 'home買賣區規則提醒', 'home買賣區規則提醒 Timer ON!');	
 	*/	
 });
 

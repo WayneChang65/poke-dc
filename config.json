@@ -3,6 +3,8 @@
   "prefix": "",
   "guild_pokemon_group": "635373123448864769",
 
+  "yt2mp3_output_path": "/usr/share/httpd/noindex/images/lb_images/temp",
+
   "(For 測試)接受列管的交易區頻道名稱": "",
   "post_mgr_channel_1_test": "測試刪除區1",
   "post_mgr_channel_2_test": "測試刪除區2",
