@@ -57,13 +57,13 @@ bot.on("ready", () => {
 	// .....................................................................................
 
 	//等公告後，再打開來，整個清除。(建新區) 
-	scheduling.setCyclicTimer_Do_Every_10_days(undefined, bot, post_mgr.delAllMessagesByChannels,
-		'23:58', c.TOMORROW, '交換與買賣區清除!', '交換買賣區清除 Timer ON!');
+	//scheduling.setCyclicTimer_Do_Every_10_days(undefined, bot, post_mgr.delAllMessagesByChannels,
+	//	'23:58', c.TOMORROW, '交換與買賣區清除!', '交換買賣區清除 Timer ON!');
 
 	scheduling.setCyclicTimer_Do_Everyday(undefined, bot, taggle_msg.warningOverNightToDrivers,
 		'23:50', c.TODAY, '車長換日提醒', '車長換日提醒 Timer ON!');
 
-	/*
+	
 	const timeSpan = 1000 * 60 * 10; // 10分鐘
 	taggle_msg.warningTradeMsg(undefined, bot, timeSpan, MGR_CHANNEL_1);
 	scheduling.setCyclicTimer_Do_EveryInterval(null, bot, taggle_msg.warningTradeMsg, 
@@ -71,8 +71,8 @@ bot.on("ready", () => {
 	
 	taggle_msg.warningTradeMsg(undefined, bot, timeSpan, MGR_CHANNEL_2);
 	scheduling.setCyclicTimer_Do_EveryInterval(null, bot, taggle_msg.warningTradeMsg, 
-		timeSpan, MGR_CHANNEL_2, 'home買賣區規則提醒', 'home買賣區規則提醒 Timer ON!');
-	*/	
+		timeSpan, MGR_CHANNEL_2, 'home買賣區規則提醒', 'home買賣區規則提醒 Timer ON!');	
+		
 });
 
 bot.on('guildMemberAdd', member => {
