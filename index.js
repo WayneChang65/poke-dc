@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 const fs = require("fs");
 const fmlog = require('@waynechang65/fml-consolelog').log;
 const post_mgr = require('./lib/post_mgr.js');
-const scheduling = require('./lib/schedling.js');
+//const scheduling = require('./lib/schedling.js');
 const taggle_msg = require('./lib/taggle_msg.js');
 
 bot.commands = new Discord.Collection();
@@ -60,8 +60,11 @@ bot.on("ready", () => {
 	//scheduling.setCyclicTimer_Do_Every_10_days(undefined, bot, post_mgr.delAllMessagesByChannels,
 	//	'23:58', c.TOMORROW, '交換與買賣區清除!', '交換買賣區清除 Timer ON!');
 
+	// 覺得沒必要，先關掉。
+	/*
 	scheduling.setCyclicTimer_Do_Everyday(undefined, bot, taggle_msg.warningOverNightToDrivers,
 		'23:50', c.TODAY, '車長換日提醒', '車長換日提醒 Timer ON!');
+	*/
 
 	// 覺得沒必要，先關掉。
 	/*
