@@ -43,6 +43,9 @@ Run it by command below.
 node index.js
 ```
 
+## LOGO   
+[Tony @a032356469](https://twitter.com/a032356469)：艾薇小妹ロボ大頭貼設計者，也是一名專業畫師  
+
 ## 參考網站 (Reference)  
 * [The-SourceCode / DiscordJS_Template](https://github.com/The-SourceCode/DiscordJS_Template)  
 
