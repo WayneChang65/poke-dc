@@ -19,6 +19,7 @@
     "fs": "0.0.1-security",
     "ms": "^2.1.1",
     "node-datetime": "^2.1.2",
+    "request": "^2.88.2",
     "youtube-mp3-downloader": "^0.7.3"
   }
 }
