@@ -7,6 +7,7 @@ const fmlog = require('@waynechang65/fml-consolelog').log;
 const post_mgr = require('./lib/post_mgr.js');
 //const scheduling = require('./lib/schedling.js');
 const taggle_msg = require('./lib/taggle_msg.js');
+const to_webapi = require('./lib/to_webapi.js');
 
 bot.commands = new Discord.Collection();
 
@@ -52,6 +53,7 @@ bot.on("ready", () => {
 	console.log('');
 	post_mgr.refreshMemberCount(null, bot);
 
+	to_webapi.run();	// 將本伺服器的狀態傳到 Web API(維護 alive...)
 	// .....................................................................................
 	// 重要重要重要！！！！ 要使用時間功能，請在CentOS伺服器上運作或測試，不然Mac電腦時間不對，會誤觸發！
 	// .....................................................................................
