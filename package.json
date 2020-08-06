@@ -18,6 +18,7 @@
     "discord.js": "^11.3.2",
     "fs": "0.0.1-security",
     "ms": "^2.1.1",
-    "node-datetime": "^2.1.2"
+    "node-datetime": "^2.1.2",
+    "youtube-mp3-downloader": "^0.7.3"
   }
 }
