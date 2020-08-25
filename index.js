@@ -1,8 +1,8 @@
 'use strict';
-const Discord = require("discord.js");
-const config = require("./config.json");
+const Discord = require('discord.js');
+const config = require('./config.json');
 const bot = new Discord.Client();
-const fs = require("fs");
+const fs = require('fs');
 const fmlog = require('@waynechang65/fml-consolelog').log;
 const post_mgr = require('./lib/post_mgr.js');
 //const scheduling = require('./lib/schedling.js');
@@ -30,10 +30,10 @@ if (!bot_token) {
 	return;
 }
 
-fs.readdir("./commands/", (err, files) => {
+fs.readdir('./commands/', (err, files) => {
 	if (err) console.log(err);
 
-	let jsfile = files.filter(f => f.split(".").pop() === "js");
+	let jsfile = files.filter(f => f.split('.').pop() === 'js');
 	if (jsfile.length <= 0) {
 		fmlog('error_msg', ['FATAL', '找不到Command!', '請確認Command檔名及help屬性文字']);
 		return;
@@ -46,7 +46,7 @@ fs.readdir("./commands/", (err, files) => {
 	console.log('');
 });
 
-bot.on("ready", () => {
+bot.on('ready', () => {
 	fmlog('sys_msg', ['READY', bot.user.username.toString() + ' is ONLINE.']);
 	console.log('');
 	post_mgr.init(MGR_CHANNEL_1, MGR_CHANNEL_2, ID_CHANNEL_ANN, GUILD_POKEMON_GROUP);
@@ -90,10 +90,10 @@ bot.on('guildMemberRemove', member => {
 	post_mgr.refreshMemberCount(null, bot);
 });
 
-bot.on("message", async message => {
+bot.on('message', async message => {
 	if (message.author.bot) return;
 	if (message.channel.type === 'dm') return;
-	let content = message.content.split(" ");
+	let content = message.content.split(' ');
 	let command = content[0];
 	let args = content.slice(1);
 	let prefix = config.prefix;
@@ -122,5 +122,9 @@ bot.on("message", async message => {
 		}
 	}
 })
+
+bot.on('error', () => {
+	console.error();
+});
 
 bot.login(bot_token);
