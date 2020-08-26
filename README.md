@@ -9,7 +9,7 @@ poke-dc is discord bot for POKEMON-GROUP server.
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_0.gif" width="80%" height="80%">
+  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_0.gif" width="50%" height="50%">
 </p>  
 
 ## 前言(Overview)
