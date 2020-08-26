@@ -3,8 +3,14 @@
 
 poke-dc 是一個服務"寶可夢 大集團 交流 大群"伺服器的Discord機器人，她的名字是**波可小妹ロボ**。  
 poke-dc is discord bot for POKEMON-GROUP server.  
- 
-![image](https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_pic2.png)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_pic2.png" width="80%" height="80%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_0.gif" width="80%" height="80%">
+</p>  
 
 ## 前言(Overview)
 
