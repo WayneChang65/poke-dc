@@ -5,11 +5,11 @@ poke-dc 是一個服務"寶可夢 大集團 交流 大群"伺服器的Discord機
 poke-dc is discord bot for POKEMON-GROUP server.  
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_pic2.png" width="80%" height="80%">
+  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_pic2.png" width="100%" height="100%">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_0.gif" width="50%" height="50%">
+  <img src="https://raw.githubusercontent.com/WayneChang65/poke-dc/master/pics/poke_dc_0.gif" width="80%" height="80%">
 </p>  
 
 ## 前言(Overview)
