@@ -3,6 +3,7 @@ const ytmp3_downloader = require("youtube-mp3-downloader");
 const fmlog = require('@waynechang65/fml-consolelog').log;
 const basic_f = require('../lib/basic_f.js');
 const config = require('../config.json');
+let apiUri = process.env.POKE_DC_RESTFUL_URI;
 
 let gUsrMsg;
 let gUuid;
@@ -30,7 +31,7 @@ yd.on("finished", function (err, data) {
     //console.log(data);
     let aryFilename = data.file.trim().split('/');
     let filename = aryFilename[aryFilename.length - 1];
-    let dl_link = 'https://wayne65.ap.ngrok.io/lb_images/temp/' + filename;
+    let dl_link = 'https://' + apiUri + '/lb_images/temp/' + filename;
     console.log('\nvideoTitle: ' + data.videoTitle + '  fname: ' + filename);
     gUsrMsg.reply(data.videoTitle + '\n' + dl_link);
 });
