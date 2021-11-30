@@ -1,5 +1,5 @@
 # poke-dc
-[![POKE-DC](https://img.shields.io/badge/dynamic/json?color=blue&label=%E6%B3%A2%E5%8F%AF%E5%B0%8F%E5%A6%B9%E3%83%AD%E3%83%9C&query=online&url=http%3A%2F%2Fwayne65.asuscomm.com%3A3333%2Fpokedc%2Fstatus)](https://github.com/WayneChang65/poke-dc) [![Counts](https://img.shields.io/badge/dynamic/json?color=blue&label=%E7%B8%BD%E4%BA%BA%E6%95%B8&prefix=%20&query=counts&suffix=%20%E4%BA%BA&url=http%3A%2F%2Fwayne65.asuscomm.com%3A3333%2Fpokedc%2Fstatistics%2Fusers)](https://github.com/WayneChang65/poke-dc)  
+[![POKE-DC](https://img.shields.io/badge/dynamic/json?color=blue&label=%E6%B3%A2%E5%8F%AF%E5%B0%8F%E5%A6%B9%E3%83%AD%E3%83%9C&query=online&url=http%3A%2F%2Fapi.wayne65.com%2Fpokedc%2Fstatus)](https://github.com/WayneChang65/poke-dc) [![Counts](https://img.shields.io/badge/dynamic/json?color=blue&label=%E7%B8%BD%E4%BA%BA%E6%95%B8&prefix=%20&query=counts&suffix=%20%E4%BA%BA&url=http%3A%2F%2Fapi.wayne65.com%2Fpokedc%2Fstatistics%2Fusers)](https://github.com/WayneChang65/poke-dc)
 
 poke-dc 是一個服務"寶可夢 大集團 交流 大群"伺服器的Discord機器人，她的名字是**波可小妹ロボ**。  
 poke-dc is discord bot for POKEMON-GROUP server.  
