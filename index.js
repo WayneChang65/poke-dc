@@ -4,7 +4,7 @@ const config = require('./config.json');
 const bot = new Discord.Client();
 const fs = require('fs');
 const fmlog = require('@waynechang65/fml-consolelog').log;
-const post_mgr = require('./lib/post_mgr.js');
+//const post_mgr = require('./lib/post_mgr.js');
 //const scheduling = require('./lib/schedling.js');
 const taggle_msg = require('./lib/taggle_msg.js');
 const to_webapi = require('./lib/to_webapi.js');
@@ -13,8 +13,8 @@ bot.commands = new Discord.Collection();
 
 const MGR_CHANNEL_1 = config.post_mgr_channel_1;	// 交易區
 const MGR_CHANNEL_2 = config.post_mgr_channel_2;	// Home交易區
-const ID_CHANNEL_ANN = config.id_channel_ann;
-const GUILD_POKEMON_GROUP = config.guild_pokemon_group;
+//const ID_CHANNEL_ANN = config.id_channel_ann;
+//const GUILD_POKEMON_GROUP = config.guild_pokemon_group;
 
 const bot_token = process.env.POKE_DC_TOKEN;
 
@@ -49,9 +49,9 @@ fs.readdir('./commands/', (err, files) => {
 bot.on('ready', () => {
 	fmlog('sys_msg', ['READY', bot.user.username.toString() + ' is ONLINE.']);
 	console.log('');
-	post_mgr.init(MGR_CHANNEL_1, MGR_CHANNEL_2, ID_CHANNEL_ANN, GUILD_POKEMON_GROUP);
+	//post_mgr.init(MGR_CHANNEL_1, MGR_CHANNEL_2, ID_CHANNEL_ANN, GUILD_POKEMON_GROUP);
 	console.log('');
-	post_mgr.refreshMemberCount(null, bot);
+	//post_mgr.refreshMemberCount(null, bot);
 
 	to_webapi.run();	// 將本伺服器的狀態傳到 Web API(維護 alive...)
 	// .....................................................................................
@@ -83,11 +83,11 @@ bot.on('ready', () => {
 
 bot.on('guildMemberAdd', member => {
 	taggle_msg.newbieJoined(member);
-	post_mgr.refreshMemberCount(null, bot);
+	//post_mgr.refreshMemberCount(null, bot);
 });
 
 bot.on('guildMemberRemove', member => {
-	post_mgr.refreshMemberCount(null, bot);
+	//post_mgr.refreshMemberCount(null, bot);
 });
 
 bot.on('message', async message => {
@@ -109,7 +109,7 @@ bot.on('message', async message => {
 			fmlog('basic_msg', ['POST MANAGER', String(message.author.username),
 				String(message.channel.name) + ' 指令處理', ''
 			]);
-			post_mgr.run(bot, message, null);
+			//post_mgr.run(bot, message, null);
 			fullTxtOut_Flag = true;
 			//return; // 如果進 買賣區，就不執行後面指令
 		} else {
