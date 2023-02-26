@@ -2,7 +2,7 @@
 //const taggle_msg = require('../lib/taggle_msg.js');
 //const scheduling = require('../lib/schedling.js');
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (discord, bot, message, args) => {
 	//taggle_msg.warningOverNightToDrivers(null, bot);
 	/*
 	scheduling.setCyclicTimer_Do_EveryInterval(null, bot, async () => {
@@ -15,5 +15,5 @@ module.exports.run = async (bot, message, args) => {
 }
 //name this whatever the command name is.
 module.exports.help = {
-	name: "tg__1234"
+	name: 'tg__1234'
 }
