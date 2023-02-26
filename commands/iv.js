@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args) => {
 			if (nature[i] === n.NEG) idx_unreasonable_nature--;
 		}
 		if (idx_unreasonable_nature){
-			throw {"code": "301", "msg": "性格加成不合理"};
+			throw {'code': '301', 'msg': '性格加成不合理'};
 		}
 
 		let stats = [parseInt(aryMsg[3]), parseInt(aryMsg[4]), parseInt(aryMsg[5]),
@@ -70,5 +70,5 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-	name: "iv,"
+	name: 'iv,'
 }
