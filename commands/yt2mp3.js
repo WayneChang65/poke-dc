@@ -41,7 +41,7 @@ yd.on('error', function (error) {
     gUsrMsg.reply(ERROR_MSG_ID);
 });
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (discord, bot, message, args) => {
     gUsrMsg = message;
     let aryMsg = message.content.trim().split(',');
     //console.log(aryMsg);

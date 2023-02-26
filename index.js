@@ -53,7 +53,7 @@ bot.on('message', async message => {
 	let commandfile = bot.commands.get(command.slice(prefix.length));
 	if (commandfile) {
 		console.log('');
-		commandfile.run(bot, message, args);
+		commandfile.run(Discord, bot, message, args);
 	} else {
 		process.stdout.write('.');
 	}

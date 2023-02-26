@@ -1,6 +1,6 @@
 {
   "name": "poke_dc",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "poke_dc is a discord bot for POKEMON-GROUP server",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,9 @@
     "fs": "0.0.1-security",
     "ms": "^2.1.1",
     "node-datetime": "^2.1.2",
+    "openai": "^3.1.0",
     "request": "^2.88.2",
-    "youtube-mp3-downloader": "^0.7.3"
+    "youtube-mp3-downloader": "^0.7.3",
+    "ytdl-core": "^4.11.2"
   }
 }

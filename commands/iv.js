@@ -5,7 +5,7 @@ const fmlog = require('@waynechang65/fml-consolelog').log;
 
 pokeiv.setLanguage('tw');
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (discord, bot, message, args) => {
 	let pokeNum;
 	let aryMsg;
 	try {
